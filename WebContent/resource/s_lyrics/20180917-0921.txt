@@ -1,0 +1,23 @@
+ CREATE TABLE `t_d_areainfo` (
+  `id` int(11) NOT NULL,
+  `name` varchar(48) NOT NULL DEFAULT '' COMMENT '名称',
+  `arealevel` tinyint(2) NOT NULL DEFAULT '0' COMMENT '层级标识： 1  省份， 2  市， 3  区县',
+  `parent_id` int(11) DEFAULT NULL COMMENT '父节点',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='区县行政编码字典表';
+
+
+（ 10分）本项目采用MVC模式开发
+----A 写出显示 servlet----
+（ 20分）完成查出所有省的方法
+（ 20分）完成根据省ID，查所有城市的方法
+注意：本项目只能用一个servlet  
+
+----B 点击省右边的查看链接，查询出该省的所有城市 ---- 
+（ 10分）查看链接能正常传 省id数据
+（ 10分）完成根据省ID 查城市的dao 方法
+（ 20分）能正常显示城市数据到JSP页面上(运用JSTL标签显示，不能用<% %>)
+（ 10分）采用ajax 发送的请求
+
+
+
